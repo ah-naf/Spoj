@@ -50,20 +50,9 @@ using namespace std;
     int main() {
         AHNAF;
         testcase(t) {
-            int n;cin>>n; map<int, int> m;
-            for(int i=0; i<n; i++) {
-                int x;cin>>x; m[x]++;
-            }
-            bool chk = 0;
-            for(auto it: m) {
-                if(it.ss > (n / 2)) {
-                    cout<<"YES"<<" "<<it.ff<<endl;
-                    chk = 1;
-                    break;
-                }
-            }
-            if(!chk) {
-                cout<<"NO"<<endl;
-            }
+            ll n;cin>>n;
+            n = 3 * ((n * (n + 1))/2) - n;
+			n = n % 1000007;
+            cout<<n<<endl;
         }
     }
